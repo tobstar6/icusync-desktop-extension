@@ -2,6 +2,10 @@
 
 This folder contains the extension manifest used to build `icusync.mcpb`.
 
+**Website:** https://icusync.icu
+**Sign up:** https://icusync.icu/signup
+**Docs / more info:** https://icusync.icu/resources
+
 ## Build
 
 From the project root:
@@ -10,7 +14,7 @@ From the project root:
 bash scripts/build-extension.sh
 ```
 
-This zips `manifest.json`, `icon.png`, and `proxy.js` into `dist/icusync.mcpb`. `proxy.js` is a thin stdio-to-HTTP relay to the hosted MCP server — there's no local server to build.
+This zips `manifest.json`, `icon.png`, and `proxy.js` into `dist/icusync.mcpb`. `proxy.js` is a thin stdio-to-HTTP relay to the hosted MCP server; there's no local server to build.
 
 ## Privacy Policy
 
@@ -19,7 +23,7 @@ IcuSync's privacy policy is available at https://icusync.icu/privacy. It covers 
 ## Setup (End User)
 
 **Prerequisites:**
-- An active IcuSync subscription
+- An active IcuSync subscription (sign up at https://icusync.icu/signup if you don't have one)
 - Your intervals.icu account connected in the IcuSync dashboard
 
 **Get your API token:**
@@ -36,7 +40,7 @@ IcuSync's privacy policy is available at https://icusync.icu/privacy. It covers 
 
 ## Usage
 
-Once installed, just talk to Claude naturally — no special syntax needed. For example:
+Once installed, just talk to Claude naturally: no special syntax needed. For example:
 
 - "What's my current fitness (CTL/ATL/TSB)?"
 - "Show me my last 5 rides and how they compare to my zones."
@@ -44,4 +48,6 @@ Once installed, just talk to Claude naturally — no special syntax needed. For 
 - "How did I feel after yesterday's workout? Log that I felt strong and add 40g of carbs."
 - "Based on my recent power data, does my FTP look accurate?"
 
-Claude calls the IcuSync tools directly — reading training history, fitness metrics, wellness, and power/pace curves, and writing workouts, activity notes, and sport settings back to intervals.icu — without you needing to know the underlying tool names.
+Claude calls the IcuSync tools directly: reading training history, fitness metrics, wellness, and power/pace curves, and writing workouts, activity notes, and sport settings back to intervals.icu, without you needing to know the underlying tool names.
+
+For more details, see https://icusync.icu/resources.
