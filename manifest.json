@@ -1,0 +1,102 @@
+{
+  "manifest_version": "0.3",
+  "name": "icusync",
+  "version": "1.0.0",
+  "display_name": "IcuSync",
+  "description": "Connect Claude to your intervals.icu training data. Pull and push workouts, analyse training history, and manage your calendar conversationally.",
+  "author": {
+    "name": "IcuSync"
+  },
+  "homepage": "https://icusync.icu",
+  "icon": "icon.png",
+  "privacy_policies": ["https://icusync.icu/privacy"],
+  "server": {
+    "type": "node",
+    "entry_point": "proxy.js",
+    "mcp_config": {
+      "command": "node",
+      "args": [
+        "${__dirname}/proxy.js"
+      ],
+      "env": {
+        "ICUSYNC_REMOTE_MCP_URL": "https://mcp.icusync.icu/mcp",
+        "ICUSYNC_USER_TOKEN": "${user_config.ICUSYNC_USER_TOKEN}"
+      }
+    }
+  },
+  "user_config": {
+    "ICUSYNC_USER_TOKEN": {
+      "type": "string",
+      "title": "IcuSync User Token",
+      "description": "Your IcuSync API token from your dashboard at icusync.icu",
+      "sensitive": true,
+      "required": true
+    }
+  },
+  "tools": [
+    {
+      "name": "get_athlete_profile",
+      "description": "Retrieve athlete profile and training zones"
+    },
+    {
+      "name": "get_training_history",
+      "description": "Retrieve recent training activities and fitness data"
+    },
+    {
+      "name": "get_activity_detail",
+      "description": "Retrieve detailed lap-by-lap data for a specific activity"
+    },
+    {
+      "name": "get_events",
+      "description": "Retrieve planned calendar events from the athlete's intervals.icu calendar"
+    },
+    {
+      "name": "get_fitness",
+      "description": "Retrieve CTL, ATL and TSB fitness metrics across a date range"
+    },
+    {
+      "name": "push_workout",
+      "description": "Push planned workouts to your intervals.icu calendar"
+    },
+    {
+      "name": "edit_workout",
+      "description": "Edit an existing workout on your calendar"
+    },
+    {
+      "name": "delete_workout",
+      "description": "Delete a workout from your calendar"
+    },
+    {
+      "name": "get_wellness",
+      "description": "Retrieve wellness data including HRV, sleep, resting heart rate and other daily wellness metrics"
+    },
+    {
+      "name": "push_wellness",
+      "description": "Write wellness data to intervals.icu — nutrition totals (kcal/macros), subjective scores (fatigue, soreness, mood, motivation, stress), weight, and daily notes"
+    },
+    {
+      "name": "get_best_efforts",
+      "description": "Retrieve best effort times and paces for key distances (400m, 1km, 5km, 10km, half marathon, marathon) from the pace curve"
+    },
+    {
+      "name": "get_power_curves",
+      "description": "Get the athlete's best power output curve for a given time period and sport (Ride or Run)"
+    },
+    {
+      "name": "get_extended_metrics",
+      "description": "Retrieve advanced sensor metrics for a specific activity including running dynamics, core temperature, DFA alpha1, W' balance and blood glucose"
+    },
+    {
+      "name": "get_training_summary",
+      "description": "Aggregate training stats over a date range including total volume, TSS, calories by sport, zone distribution and week-by-week breakdown"
+    },
+    {
+      "name": "update_activity",
+      "description": "Update a completed activity in intervals.icu — name, description, feel, perceived exertion, carbs ingested, gear, tags, and custom activity fields"
+    },
+    {
+      "name": "update_sport_settings",
+      "description": "Update an athlete's threshold values (FTP, threshold pace, LTHR, max HR, W') in intervals.icu for Run, Ride, or Swim"
+    }
+  ]
+}
