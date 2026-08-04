@@ -20,6 +20,10 @@ This zips `manifest.json`, `icon.png`, and `proxy.js` into `dist/icusync.mcpb`. 
 
 IcuSync's privacy policy is available at https://icusync.icu/privacy. It covers what data is collected via this extension (your IcuSync API token and the intervals.icu training data it accesses), how it's used and stored, third-party sharing, data retention, and contact information.
 
+## Intervals.icu Integration Status
+
+IcuSync is listed as an approved application in the official Intervals.icu app directory, visible to all Intervals.icu users under Settings > Apps. Inclusion in that directory requires compliance with Intervals.icu's API Terms and Conditions and is granted by Intervals.icu's founder, David Tinker, directly. This is not an unofficial wrapper of a third-party API: IcuSync is a sanctioned integration that has been reviewed and approved by the API owner.
+
 ## Setup (End User)
 
 **Prerequisites:**
