@@ -1,6 +1,6 @@
 # IcuSync Claude Desktop Extension
 
-This folder contains the extension manifest used to build `icusync.mcpb`.
+This repo contains the Claude Desktop Extension (MCPB) for IcuSync: a thin stdio-to-HTTP proxy (`proxy.js`) that relays MCP requests to the hosted IcuSync MCP server at `https://mcp.icusync.icu/mcp`. The tools and server logic themselves live in IcuSync's main (private) repository; this bundle just connects Claude Desktop to that remote server.
 
 **Website:** https://icusync.icu
 **Sign up:** https://icusync.icu/signup
@@ -8,13 +8,11 @@ This folder contains the extension manifest used to build `icusync.mcpb`.
 
 ## Build
 
-From the project root:
-
 ```bash
-bash scripts/build-extension.sh
+zip -r icusync.mcpb manifest.json icon.png proxy.js
 ```
 
-This zips `manifest.json`, `icon.png`, and `proxy.js` into `dist/icusync.mcpb`. `proxy.js` is a thin stdio-to-HTTP relay to the hosted MCP server; there's no local server to build.
+There's no local server to build; `proxy.js` is a self-contained relay with no dependencies.
 
 ## Privacy Policy
 
