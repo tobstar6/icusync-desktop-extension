@@ -72,7 +72,7 @@
     },
     {
       "name": "push_wellness",
-      "description": "Write wellness data to intervals.icu — nutrition totals (kcal/macros), subjective scores (fatigue, soreness, mood, motivation, stress), weight, and daily notes"
+      "description": "Write wellness data to intervals.icu: nutrition totals (kcal/macros), subjective scores (fatigue, soreness, mood, motivation, stress), weight, and daily notes"
     },
     {
       "name": "get_best_efforts",
@@ -92,7 +92,7 @@
     },
     {
       "name": "update_activity",
-      "description": "Update a completed activity in intervals.icu — name, description, feel, perceived exertion, carbs ingested, gear, tags, and custom activity fields"
+      "description": "Update a completed activity in intervals.icu: name, description, feel, perceived exertion, carbs ingested, gear, tags, and custom activity fields"
     },
     {
       "name": "update_sport_settings",

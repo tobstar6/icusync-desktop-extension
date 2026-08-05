@@ -40,6 +40,30 @@ IcuSync is listed as an approved application in the official [Intervals.icu](htt
 4. Enter your `ICUSYNC_USER_TOKEN` when prompted
 5. Restart Claude Desktop
 
+## Available Tools
+
+16 tools total.
+
+**Read:**
+- **get_athlete_profile**: Retrieve athlete profile and training zones
+- **get_training_history**: Retrieve recent training activities and fitness data
+- **get_activity_detail**: Retrieve detailed lap-by-lap data for a specific activity
+- **get_events**: Retrieve planned calendar events from the athlete's intervals.icu calendar
+- **get_fitness**: Retrieve CTL, ATL and TSB fitness metrics across a date range
+- **get_wellness**: Retrieve wellness data including HRV, sleep, resting heart rate and other daily wellness metrics
+- **get_best_efforts**: Retrieve best effort times and paces for key distances (400m, 1km, 5km, 10km, half marathon, marathon) from the pace curve
+- **get_power_curves**: Get the athlete's best power output curve for a given time period and sport (Ride or Run)
+- **get_extended_metrics**: Retrieve advanced sensor metrics for a specific activity including running dynamics, core temperature, DFA alpha1, W' balance and blood glucose
+- **get_training_summary**: Aggregate training stats over a date range including total volume, TSS, calories by sport, zone distribution and week-by-week breakdown
+
+**Write:**
+- **push_workout**: Push planned workouts to your intervals.icu calendar
+- **edit_workout**: Edit an existing workout on your calendar
+- **delete_workout**: Delete a workout from your calendar
+- **push_wellness**: Write wellness data to intervals.icu: nutrition totals (kcal/macros), subjective scores (fatigue, soreness, mood, motivation, stress), weight, and daily notes
+- **update_activity**: Update a completed activity in intervals.icu: name, description, feel, perceived exertion, carbs ingested, gear, tags, and custom activity fields
+- **update_sport_settings**: Update an athlete's threshold values (FTP, threshold pace, LTHR, max HR, W') in intervals.icu for Run, Ride, or Swim
+
 ## Usage
 
 Once installed, just talk to Claude naturally: no special syntax needed. For example:
