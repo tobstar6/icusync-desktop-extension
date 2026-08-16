@@ -42,7 +42,7 @@ IcuSync is listed as an approved application in the official [Intervals.icu](htt
 
 ## Available Tools
 
-16 tools total.
+17 tools total.
 
 **Read:**
 - **get_athlete_profile**: Retrieve athlete profile and training zones
@@ -53,6 +53,7 @@ IcuSync is listed as an approved application in the official [Intervals.icu](htt
 - **get_wellness**: Retrieve wellness data including HRV, sleep, resting heart rate and other daily wellness metrics
 - **get_best_efforts**: Retrieve best effort times and paces for key distances (400m, 1km, 5km, 10km, half marathon, marathon) from the pace curve
 - **get_power_curves**: Get the athlete's best power output curve for a given time period and sport (Ride or Run)
+- **get_climb_segments**: Detect sustained climb segments in an activity and compute VAM (vertical ascent rate) for each
 - **get_extended_metrics**: Retrieve advanced sensor metrics for a specific activity including running dynamics, core temperature, DFA alpha1, W' balance and blood glucose
 - **get_training_summary**: Aggregate training stats over a date range including total volume, TSS, calories by sport, zone distribution and week-by-week breakdown
 

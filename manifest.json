@@ -83,6 +83,10 @@
       "description": "Get the athlete's best power output curve for a given time period and sport (Ride or Run)"
     },
     {
+      "name": "get_climb_segments",
+      "description": "Detect sustained climb segments in an activity and compute VAM (vertical ascent rate) for each"
+    },
+    {
       "name": "get_extended_metrics",
       "description": "Retrieve advanced sensor metrics for a specific activity including running dynamics, core temperature, DFA alpha1, W' balance and blood glucose"
     },
