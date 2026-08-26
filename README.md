@@ -42,7 +42,7 @@ IcuSync is listed as an approved application in the official [Intervals.icu](htt
 
 ## Available Tools
 
-17 tools total.
+18 tools total.
 
 **Read:**
 - **get_athlete_profile**: Retrieve athlete profile and training zones
@@ -56,6 +56,7 @@ IcuSync is listed as an approved application in the official [Intervals.icu](htt
 - **get_climb_segments**: Detect sustained climb segments in an activity and compute VAM (vertical ascent rate) for each
 - **get_extended_metrics**: Retrieve advanced sensor metrics for a specific activity including running dynamics, core temperature, DFA alpha1, W' balance and blood glucose
 - **get_training_summary**: Aggregate training stats over a date range including total volume, TSS, calories by sport, zone distribution and week-by-week breakdown
+- **get_ride_power_patterns**: Analyse a Ride's power stream for coasting time (short vs long coasts) and repeated hard/easy burst patterns, common on technical MTB, cyclocross, gravel, or criterium terrain
 
 **Write:**
 - **push_workout**: Push planned workouts to your intervals.icu calendar
