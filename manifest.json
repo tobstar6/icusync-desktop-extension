@@ -109,6 +109,14 @@
     {
       "name": "get_interval_intensity_stats",
       "description": "Robust per-interval power or pace stats (median, interquartile range, coefficient of variation, and a ramp-trimmed settled mean) plus optional time-in-target-band, for interval sessions where the plain per-rep average is misleading"
+    },
+    {
+      "name": "get_grade_adjusted_pace",
+      "description": "Convert a run's actual hilly pace into flat-ground-equivalent effort (grade adjusted pace), using the same running-economy-of-grade model behind GAP on Strava, TrainingPeaks and Intervals.icu"
+    },
+    {
+      "name": "get_pacing_shape",
+      "description": "Classify how effort was distributed across a continuous run or ride (negative split, positive split, or even) using grade-adjusted pace or normalized power, not raw pace or a pre-race calculator"
     }
   ]
 }
