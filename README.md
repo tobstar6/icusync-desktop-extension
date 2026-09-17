@@ -42,12 +42,12 @@ IcuSync is listed as an approved application in the official [Intervals.icu](htt
 
 ## Available Tools
 
-21 tools total.
+22 tools total.
 
 **Read:**
 - **get_athlete_profile**: Retrieve athlete profile and training zones
 - **get_training_history**: Retrieve recent training activities and fitness data
-- **get_activity_detail**: Retrieve detailed lap-by-lap data for a specific activity
+- **get_activity_detail**: Retrieve detailed lap-by-lap data for a specific activity, including its comment thread
 - **get_events**: Retrieve planned calendar events from the athlete's intervals.icu calendar
 - **get_fitness**: Retrieve CTL, ATL and TSB fitness metrics across a date range
 - **get_wellness**: Retrieve wellness data including HRV, sleep, resting heart rate and other daily wellness metrics
@@ -67,6 +67,7 @@ IcuSync is listed as an approved application in the official [Intervals.icu](htt
 - **delete_workout**: Delete a workout from your calendar
 - **push_wellness**: Write wellness data to intervals.icu: nutrition totals (kcal/macros), subjective scores (fatigue, soreness, mood, motivation, stress), weight, and daily notes
 - **update_activity**: Update a completed activity in intervals.icu: name, description, feel, perceived exertion, carbs ingested, gear, tags, and custom activity fields
+- **add_activity_comment**: Post a comment on a completed activity's comment thread in intervals.icu: coaching feedback, notes, or replies, separate from the single overwritable description field
 - **update_sport_settings**: Update an athlete's threshold values (FTP, threshold pace, LTHR, max HR, W') in intervals.icu for Run, Ride, or Swim
 
 ## Usage

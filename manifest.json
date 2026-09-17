@@ -99,6 +99,10 @@
       "description": "Update a completed activity in intervals.icu: name, description, feel, perceived exertion, carbs ingested, gear, tags, and custom activity fields"
     },
     {
+      "name": "add_activity_comment",
+      "description": "Post a comment on a completed activity's comment thread in intervals.icu: coaching feedback, notes, or replies, separate from the single overwritable description field"
+    },
+    {
       "name": "update_sport_settings",
       "description": "Update an athlete's threshold values (FTP, threshold pace, LTHR, max HR, W') in intervals.icu for Run, Ride, or Swim"
     },
