@@ -42,7 +42,7 @@ IcuSync is listed as an approved application in the official [Intervals.icu](htt
 
 ## Available Tools
 
-22 tools total.
+24 tools total.
 
 **Read:**
 - **get_athlete_profile**: Retrieve athlete profile and training zones
@@ -60,6 +60,8 @@ IcuSync is listed as an approved application in the official [Intervals.icu](htt
 - **get_interval_intensity_stats**: Robust per-interval power or pace stats (median, interquartile range, coefficient of variation, and a ramp-trimmed settled mean) plus optional time-in-target-band, for interval sessions where the plain per-rep average is misleading
 - **get_grade_adjusted_pace**: Convert a run's actual hilly pace into flat-ground-equivalent effort (grade adjusted pace), using the same running-economy-of-grade model behind GAP on Strava, TrainingPeaks and Intervals.icu
 - **get_pacing_shape**: Classify how effort was distributed across a continuous run or ride (negative split, positive split, or even) using grade-adjusted pace or normalized power, not raw pace or a pre-race calculator
+- **get_comparable_efforts**: Find past activities with an interval effort matching a target duration and intensity, e.g. a 5-minute effort around 120% FTP, for longer-term programme reviews and progression tracking
+- **get_training_plan**: Read the periodization structure of the athlete's currently assigned intervals.icu training plan: name, duration in weeks, current week, target hours per week, and starting fitness. Read only
 
 **Write:**
 - **push_workout**: Push planned workouts to your intervals.icu calendar

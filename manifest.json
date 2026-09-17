@@ -121,6 +121,14 @@
     {
       "name": "get_pacing_shape",
       "description": "Classify how effort was distributed across a continuous run or ride (negative split, positive split, or even) using grade-adjusted pace or normalized power, not raw pace or a pre-race calculator"
+    },
+    {
+      "name": "get_comparable_efforts",
+      "description": "Find past activities with an interval effort matching a target duration and intensity, e.g. a 5-minute effort around 120% FTP, for longer-term programme reviews and progression tracking"
+    },
+    {
+      "name": "get_training_plan",
+      "description": "Read the periodization structure of the athlete's currently assigned intervals.icu training plan: name, duration in weeks, current week, target hours per week, and starting fitness. Read only"
     }
   ]
 }
